@@ -1,5 +1,8 @@
 
 spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.ai.vectorstore.redis.autoconfigure.RedisVectorStoreAutoConfiguration
   datasource:
     url: jdbc:postgresql://localhost:5432/workstream_db
     username: workstream
